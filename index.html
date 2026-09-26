@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>プライバシーポリシー — しるべ</title>
-<meta name="description" content="iPad アプリ「しるべ」のプライバシーポリシー。データの保存も外部への送信も行いません。">
+<meta name="description" content="iPad アプリ「しるべ」のプライバシーポリシー。児童生徒の反応は記録せず、外部への送信も行いません。端末に保存するのはマウスの感度の設定 1 つだけです。">
 <style>
   :root {
     --paper: #fdfcfa;
@@ -46,6 +46,13 @@
   }
   p { margin: 0 0 1.1em; }
   strong { font-weight: 700; }
+  code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
 
   .headline {
     font-family: var(--serif);
@@ -105,7 +112,7 @@
 </header>
 
 <p class="headline">
-  このアプリは、データを保存しません。<br>
+  児童生徒の反応は記録しません。<br>
   外部に送信することもありません。
 </p>
 
@@ -127,10 +134,18 @@
 
 <ul>
   <li>アカウントの登録は要りません。</li>
-  <li>端末内に利用者のデータを保存しません。</li>
+  <li>端末内に保存するのは、ジョイスティックマウスの感度の設定 1 つだけです（下記）。利用者に関するデータは保存しません。</li>
   <li>iPad の中の他のアプリのデータには触れません。</li>
   <li>カメラ、マイク、写真、連絡先、位置情報などへのアクセス許可を求めません。</li>
 </ul>
+
+<h2>保存する設定</h2>
+
+<p>このアプリが端末に保存するのは、<strong>ジョイスティックマウスの感度の設定 1 つだけです。</strong>数値 1 つ（<code>UserDefaults</code> のキー <code>mouse.fullTiltSpeed</code>）で、利用者に関わるものは何も含みません。</p>
+
+<p>ジョイスティックマウスは機種やレバーの設定によって効き方が異なるため、その端末に合わせた値を保存しています。<strong>アプリ内の「ジョイスティックマウスの感度」画面から、いつでも消せます。</strong></p>
+
+<p>この値が端末の外へ出ることはありません。App Store の「App のプライバシー」欄が「データを収集しません」となっているのは、Apple の定める「収集」が端末の外への送信を指すためです。</p>
 
 <h2>使用している機能</h2>
 
@@ -140,11 +155,12 @@
   <div><dt>音の再生</dt><dd>AVFoundation</dd></div>
   <div><dt>コントローラー入力</dt><dd>GameController</dd></div>
   <div><dt>画面の描画</dt><dd>SpriteKit / SwiftUI</dd></div>
+  <div><dt>画面更新の同期</dt><dd>QuartzCore</dd></div>
 </dl>
 
 <h2>子どもの情報</h2>
 
-<p>このアプリは特別支援教育の場での使用を想定していますが、<strong>利用者の年齢にかかわらず、情報を収集しません。</strong>したがって、児童生徒に関する情報がこのアプリを通じて外部に出ることはありません。</p>
+<p>このアプリは特別支援教育の場での使用を想定していますが、<strong>利用者の年齢にかかわらず、情報を収集しません。</strong>端末に保存しているのは接続する機器の設定値だけで、児童生徒に関する情報がこのアプリを通じて外部に出ることはありません。</p>
 
 <h2>このポリシーの変更</h2>
 
@@ -168,8 +184,8 @@
 <div class="app" style="margin-bottom:28px;">iPad app “Shirube”</div>
 
 <p class="headline">
-  This app stores no data.<br>
-  It sends nothing to anyone.
+  No student responses are recorded.<br>
+  Nothing is sent to anyone.
 </p>
 
 <h2>Information collected</h2>
@@ -184,13 +200,18 @@
 <h2>On-device data</h2>
 <ul>
   <li>No account is required.</li>
-  <li>No user data is stored on the device.</li>
+  <li>The only thing stored on the device is one setting for joystick mouse sensitivity (see below). No user data is stored.</li>
   <li>The app does not access data belonging to other apps.</li>
   <li>The app requests no permission for camera, microphone, photos, contacts, or location.</li>
 </ul>
 
+<h2>The setting that is stored</h2>
+<p>The app stores <strong>one setting on the device: joystick mouse sensitivity.</strong> It is a single number (<code>UserDefaults</code> key <code>mouse.fullTiltSpeed</code>) and contains nothing about the user.</p>
+<p>Joystick mice differ by model and configuration, so the app stores a value matched to that device. <strong>It can be cleared at any time from the "ジョイスティックマウスの感度" screen in the app.</strong></p>
+<p>This value never leaves the device. The App Store privacy label reads "Data Not Collected" because Apple defines collection as transmitting data off the device.</p>
+
 <h2>Children</h2>
-<p>The app is intended for use in special-needs education. <strong>Regardless of the user's age, no information is collected</strong>, so no information about a student can leave the device through this app.</p>
+<p>The app is intended for use in special-needs education. <strong>Regardless of the user's age, no information is collected.</strong> What is stored on the device is a hardware setting, so no information about a student can leave the device through this app.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, this page is updated and the date below is revised. The same text is shown inside the app (“このアプリについて” at the bottom of the home screen). <strong>The text shown in the app is authoritative; this page is a copy of it.</strong></p>
@@ -202,7 +223,7 @@
 
 <footer>
   <span>しるべ ── プライバシーポリシー</span>
-  <span>田中　秋羽　／　2026年8月　制定</span>
+  <span>田中　秋羽　／　2026年8月　制定　／　2026年9月　更新</span>
 </footer>
 
 </div>
